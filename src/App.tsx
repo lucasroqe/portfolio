@@ -4,7 +4,7 @@ import About from "./components/About/About";
 // import Footer from "./components/Footer/Footer"
 
 import './App.css';
-import Projects from "./components/Projectss/Projects";
+import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer/Footer";
 
 

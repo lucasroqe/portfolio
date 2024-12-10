@@ -19,11 +19,11 @@ export default function About() {
       <div className={styles.content}>
         <div>
           <p className={styles.text}>
-            Olá! Me chamo Lucas Roque e sou Desenvolvedor de Software,
-            especializado em criar interfaces visuais.
+          Olá! Sou <span className={styles.spanText}>Lucas Roque</span>, Desenvolvedor de Software, focado em criar soluções eficientes e inovadores, desde 
+          interfaces visuais até funcionalidades robustas.
           </p>
           <br />
-          <p className={styles.text}>Algumas tecnologias que utilizo: </p>
+          <p className={styles.text}>Tecnologias que utilizo: </p>
           <div className={styles.middle}>
             <div className={styles.stacks}>
               <BiLogoReact size={40} color="#605AD0" />

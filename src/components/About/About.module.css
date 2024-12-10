@@ -74,6 +74,10 @@
   width: 200px;
 }
 
+.spanText{
+  color: var(--purple);
+}
+
 @media (max-width: 768px) {
   .middle {
     flex-direction: column;
@@ -91,5 +95,9 @@
 
   .button {
     width: 80%;
+  }
+
+  .aboutImage{
+    display: none;
   }
 }
