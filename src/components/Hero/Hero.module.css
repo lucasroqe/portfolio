@@ -1,0 +1,119 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+}
+
+.heroContent {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  max-width: 65%;
+  width: 100%;
+}
+
+.heroImage {
+  grid-column: 1;
+  grid-row: 1 / span 4;
+  width: 220px;
+  flex-shrink: 0;
+  margin-right: 2rem;
+}
+
+.name,
+.title,
+.description,
+.social {
+  grid-column: 2;
+}
+
+.heroImage img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.name {
+  color: var(--secondary-text);
+  font-weight: 200;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  color: var(--white-text);
+  font-weight: 600;
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  color: var(--secondary-text);
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+.titleSpan {
+  color: var(--purple);
+}
+
+.social {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.social a svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+  .hero {
+    padding: 1rem;
+  }
+
+  .heroContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .heroImage {
+    width: 200px;
+    margin: 1.5rem 0;
+    order: 2;
+  }
+
+  .name {
+    order: 1;
+    font-size: 1.55rem;
+  }
+
+  .title {
+    order: 1;
+    font-size: 2rem;
+  }
+
+  .description {
+    order: 3;
+    font-size: 1.5rem;
+  }
+
+  .social {
+    order: 4;
+    margin-top: 2rem;
+  }
+
+  .social a svg {
+    width: 30px;
+    height: 30px;
+  }
+}
