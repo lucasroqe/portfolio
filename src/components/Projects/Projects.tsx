@@ -1,9 +1,18 @@
 import styles from "./Projects.module.css";
 import goldenHiveImage from "../../assets/images/golden-hive.jpg";
 import nutrimeImage from "../../assets/images/nutrime.png";
+import clientImage from "../../assets/images/client-register-img.png";
 
 export default function Projects() {
   const projects = [
+    {
+      title: "Client Register",
+      description:
+        "Aplicação web fullstack desenvolvida para gerenciar o registro de usuários em um banco de dados.",
+      image: clientImage,
+      tags: ["Vite + React", "Node.js + Fastify", "TypeScript", "PostgreSQL", "Git"],
+      repoUrl: "https://github.com/lucasroqe/client-register.git",
+    },
     {
       title: "Nutrime",
       description:
